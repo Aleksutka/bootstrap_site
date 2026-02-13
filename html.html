@@ -10,45 +10,97 @@
     <link rel="stylesheet" href="css.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 
 <body>
+    <!--headers ar linkiem uz saites nodaļām-->
     <div class="container">
         <header
-            class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-4 border-bottom">
+            class="hr d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-1 mb-4">
             <ul class="nav col-12 col-md-12 mb-2 justify-content-center mb-md-0">
-                <li><a href="#start" id="start" class="nav-link px-4">Sākums</a></li>
-                <li><a href="#" class="nav-link px-4">Par mani</a></li>
-                <li><a href="#" class="nav-link px-4">Hobiji</a></li>
-                <li><a href="#end" class="nav-link px-4">Kontaktinformācija</a></li>
+                <li><a href="#start" class="he-labels nav-link px-4">Sākums</a></li>
+                <li><a href="#about" class="he-labels nav-link px-4">Par mani</a></li>
+                <li><a href="#hobby" class="he-labels nav-link px-4">Hobiji</a></li>
+                <li><a href="#contact" class="he-labels nav-link px-4">Kontaktinformācija</a></li>
             </ul>
         </header>
     </div>
 
-    <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">Sākums</h1>
-        <div class="col-lg-6 mx-auto">
-            <p class="lead mb-4">Kam domāta šī mājaslapa?</p>
+    <!--karusele-->
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
+                aria-current="true"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
+                class=""></button>
         </div>
+        <div class="carousel-inner"> <!--es nezinu kā strādā karusele, bet vajadzēs saprast-->
+            <div class="carousel-item"> <img src="capycapy.jpg" class="bd-placeholder-img " alt="capybara" width="100%"
+                    height="100%">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Example headline.</h1>
+                        <p class="opacity-75">Some representative placeholder content for the first slide of the
+                            carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item active"> <svg aria-hidden="true" class="bd-placeholder-img " height="100%"
+                    preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Some representative placeholder content for the second slide of the carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item"> <svg aria-hidden="true" class="bd-placeholder-img " height="100%"
+                    preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
+                </svg>
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>One more for good measure.</h1>
+                        <p>Some representative placeholder content for the third slide of this carousel.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
+    <!--konteineris ar info par mani-->
     <div class="container my-5">
         <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">PAR MANI</h1>
+                <h1 id="about" class="display-4 fw-bold lh-1 text-body-emphasis">PAR MANI</h1>
                 <p class="lead">Te būs neliels teksts par mani</p>
             </div>
             <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                <img class="rounded-lg-3"
-                    src="par_m_aleks.jpg"
-                    alt="mana bilde" width="100%" height="100%">
+                <img class="rounded-lg-3" src="par_m_aleks.jpg" alt="mana bilde" width="100%" height="100%">
             </div>
         </div>
     </div>
 
+    <!--4 līnijas ar hobijiem-->
     <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom">HOBIJI UN NODARBĪBAS</h2>
+        <h2 id="hobby" class="oswald-hobby hr-hobby pb-2">HOBIJI UN NODARBĪBAS</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
             <div class="feature col">
                 <div
@@ -57,11 +109,8 @@
                         <use xlink:href="#collection"></use>
                     </svg>
                 </div>
-                <h3 class="fs-2 text-body-emphasis">Hobijs 1</h3>
-                <p>Apraksts par šo hobiju...</p>
-                <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#chevron-right"></use>
-                </svg>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 1</h3>
+                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
             </div>
             <div class="feature col">
                 <div
@@ -70,51 +119,58 @@
                         <use xlink:href="#people-circle"></use>
                     </svg>
                 </div>
-                <h3 class="fs-2 text-body-emphasis">Hobijs 2</h3>
-                <p>Apraksts par šo hobiju...</p>
-                <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#chevron-right"></use>
-                </svg>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 2</h3>
+                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
             </div>
             <div class="feature col">
                 <div
                     class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                     <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                        <use xlink:href="#toggles2"></use>
+                        <use xlink:href="#people-circle"></use>
                     </svg>
                 </div>
-                <h3 class="fs-2 text-body-emphasis">Hobijs 3</h3>
-                <p>Apraksts par šo hobiju...</p>
-                <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#chevron-right"></use>
-                </svg>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 3</h3>
+                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
             </div>
             <div class="feature col">
                 <div
                     class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
                     <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                        <use xlink:href="#collection"></use>
+                        <use xlink:href="#people-circle"></use>
                     </svg>
                 </div>
-                <h3 class="fs-2 text-body-emphasis">Hobijs 4</h3>
-                <p>Apraksts par šo hobiju...</p>
-                <svg class="bi" aria-hidden="true">
-                    <use xlink:href="#chevron-right"></use>
-                </svg>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 4</h3>
+                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-            <div class="col-md-4 d-flex align-items-center"> 
-                <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Aleksandrs Geižāns, 10.b</span> 
+    <!--footers ar copyright sign un dropdown linkiem uz manām saitēm-->
+    <div class="container" id="contact">
+        <footer class="hr-other d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <div class="col-md-4 d-flex align-items-center">
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2026 Aleksandrs Geižāns, 10.b</span>
             </div>
             <div class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                <h5>dropdown</h5>
+                <li class="nav-item dropdown">
+                    <a class="fo-dropdown nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">Kur mani atrast</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://www.twitch.tv/aleksutka" target="_blank"><i
+                                    class="bi bi-twitch"></i> Twitch</a></li>
+                        <li><a class="dropdown-item" href="https://www.youtube.com/@aleksutka" target="_blank"><i
+                                    class="bi bi-youtube"></i> YouTube</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/Aleksutka"><i class="bi bi-github"></i>
+                                GitHub</a></li>
+                    </ul>
+                </li>
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,7 +1,37 @@
 body {
     background-color: antiquewhite;
 }
-.nav-link {
+.he-labels {
     color: black;
     font-weight: bold;
+    font-size: 20px;
+}
+.hr, .hr-hobby {
+    border-bottom: 2px solid black;
+}
+.hr-other {
+    border-top: 1px solid black;
+}
+.fo-dropdown {
+    color: black;
+    font-weight: 600;
+}
+.oswald-hobby {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+.oswald-hobbyt {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+#hobby {
+    margin-top: 15%;
+}
+.hobby-icons {
+    height: 1em;
+    width: 1em;
 }
