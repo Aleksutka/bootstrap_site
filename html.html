@@ -28,119 +28,55 @@
         </header>
     </div>
 
-    <!--karusele-->
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
-                aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class="active"
-                aria-current="true"></button>
-            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                class=""></button>
+    <!--sākuma teksts par to kam domāta šī mājaslapa-->
+    <div class="px-4 py-5 my-5 text-center" id="start">
+        <h1 class="display-5 fw-bold text-body-emphasis">Sākums</h1>
+        <div class="col-lg-6 mx-auto">
+            <p class="lead mb-4">Šī tīmekļa vietne ir izveidota kā digitāls portfolio, lai apkopotu un prezentētu
+                informāciju par mani. Vietnē pieejama informācija par personīgajām interesēm, hobijiem un mērķiem.
+                Platformas mērķis ir sniegt strukturētu un vizuālu atspoguļojumu līdzšinējai pieredzei, kā arī individuālajām prasmēm.</p>
         </div>
-        <div class="carousel-inner"> <!--es nezinu kā strādā karusele, bet vajadzēs saprast-->
-            <div class="carousel-item"> 
-                <img src="par_m_aleks.jpg" class="d-block w-100" alt="test me" style="opacity: 0.8; width: 100%; height: 150px; object-fit: cover;">
-                <div class="container">
-                    <div class="carousel-caption text-start">
-                        <h1>Example headline.</h1>
-                        <p class="opacity-75">Some representative placeholder content for the first slide of the
-                            carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item active"> <svg aria-hidden="true" class="bd-placeholder-img " height="100%"
-                    preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Some representative placeholder content for the second slide of the carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item"> <svg aria-hidden="true" class="bd-placeholder-img " height="100%"
-                    preserveAspectRatio="xMidYMid slice" width="100%" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                </svg>
-                <div class="container">
-                    <div class="carousel-caption text-end">
-                        <h1>One more for good measure.</h1>
-                        <p>Some representative placeholder content for the third slide of this carousel.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 
     <!--konteineris ar info par mani-->
-    <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="container my-5" id="about">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-4 border shadow-lg">
             <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-                <h1 id="about" class="display-4 fw-bold lh-1 text-body-emphasis">PAR MANI</h1>
-                <p class="lead">Te būs neliels teksts par mani</p>
+                <h1 class="display-4 fw-bold lh-1 text-body-emphasis">PAR MANI</h1>
+                <p class="lead">Esmu Salaspils 1. vidusskolas 10.b klases skolēns. Mani aizrauj tehnoloģijas un loģiskās
+                    zinātnes. Brīvajā laikā piekopju aktīvu un veselīgu dzīvesveidu, kā arī cenšos daudzpusīgi baudīt
+                    dzīvi. Man ir liela interese par pasauli, tās izzināšanu un savu zināšanu pilnveidošanu par visu,
+                    kas notiek mums apkārt.</p>
             </div>
             <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-                <img class="rounded-lg-3" src="par_m_aleks.jpg" alt="mana bilde" width="100%" height="100%">
+                <img class="rounded-lg-3" src="par_m_aleks.jpg" alt="mana bilde">
             </div>
         </div>
     </div>
 
-    <!--4 kollonas ar hobijiem-->
-    <div class="container px-4 py-5" id="featured-3">
-        <h2 id="hobby" class="oswald-hobby hr-hobby pb-2">HOBIJI UN NODARBĪBAS</h2>
+    <!--4 līnijas ar hobijiem-->
+    <div class="hobby container px-4 py-5" id="hobby">
+        <h2 class="oswald-hobby hr-hobby pb-2">HOBIJI UN NODARBĪBAS</h2>
         <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
             <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                        <use xlink:href="#collection"></use>
-                    </svg>
-                </div>
-                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 1</h3>
-                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Programmēšana</h3>
+                <p class="oswald-hobbyt">Man patīk rakstīt un orientēties kodā. Lai gan pagaidām esmu tikai iesācējs un
+                    vēl neprotu programmēt augstā līmenī, šī joma mani ļoti interesē.</p>
             </div>
             <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                </div>
-                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 2</h3>
-                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Riteņbraukšana</h3>
+                <p class="oswald-hobbyt">Jau kopš bērnības man patīk braukt ar riteni, un mani ļoti aizrauj divriteņu
+                    transports. Nenodarbojos ar riteņbraukšanu profesionāli, taču braukšana man sagādā lielu prieku.</p>
             </div>
             <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                </div>
-                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 3</h3>
-                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Matemātika</h3>
+                <p class="oswald-hobbyt">Man patīk matemātika un rēķināšana, tāpēc apmeklēju skolas pulciņu "Matemātikas
+                    portāls", kā arī piedalos daudzās olimpiādēs un testos.</p>
             </div>
             <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                    <svg class="bi" width="1em" height="1em" aria-hidden="true">
-                        <use xlink:href="#people-circle"></use>
-                    </svg>
-                </div>
-                <h3 class="oswald-hobby fs-2 text-body-emphasis">Hobijs 4</h3>
-                <p class="oswald-hobbyt">Apraksts par šo hobiju...</p>
+                <h3 class="oswald-hobby fs-2 text-body-emphasis">Ceļošana</h3>
+                <p class="oswald-hobbyt">Katru gadu kopā ar vecākiem dodamies uz kādu jaunu vietu, lai iepazītu ārzemes.
+                    Mēs neesam profesionāli ceļotāji, taču ceļošana mums ir kļuvusi par būtisku hobiju.</p>
             </div>
         </div>
     </div>
@@ -160,8 +96,8 @@
                                     class="bi bi-twitch"></i> Twitch</a></li>
                         <li><a class="dropdown-item" href="https://www.youtube.com/@aleksutka" target="_blank"><i
                                     class="bi bi-youtube"></i> YouTube</a></li>
-                        <li><a class="dropdown-item" href="https://github.com/Aleksutka" target="_blank"><i class="bi bi-github"></i>
-                                GitHub</a></li>
+                        <li><a class="dropdown-item" href="https://github.com/Aleksutka" target="_blank"><i
+                                    class="bi bi-github"></i> GitHub</a></li>
                     </ul>
                 </li>
             </div>
